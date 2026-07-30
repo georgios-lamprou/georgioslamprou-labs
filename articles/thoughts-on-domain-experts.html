@@ -6,9 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Technical articles by Georgios Lamprou on applied machine learning, evaluation, experimentation, and reliable data products.">
+<meta name="author" content="Georgios Lamprou">
+<meta name="dcterms.date" content="2026-07-30">
 
-<title>Articles - Georgios Lamprou</title>
+<title>Thoughts on domain experts</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -28,8 +29,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -42,9 +41,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-4a0610749eeff5ab924a4729b5181608.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-2882b07e0d8e40f1b3d200cc54aa307a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-8639f0acd5cd1eebdc0fa93a4a80d9fc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-2882b07e0d8e40f1b3d200cc54aa307a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-5fc6ff348829d9a5387fcf61cf6ca1f0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-337f024c480e23375819f3c35331fd2a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-5fc6ff348829d9a5387fcf61cf6ca1f0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -60,77 +59,28 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <style>html{ scroll-behavior: smooth; }</style>
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f4eddf">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#241c18">
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="alternate" type="application/rss+xml" title="Articles by Georgios Lamprou" href="index.xml" data-external="1"><meta property="og:title" content="Articles - Georgios Lamprou">
-<meta property="og:description" content="Technical articles by Georgios Lamprou on applied machine learning, evaluation, experimentation, and reliable data products.">
+<meta property="og:title" content="Thoughts on domain experts">
+<meta property="og:description" content="Articles and reflections on data science, AI and technology.">
+<meta property="og:image" content="https://labs.georgioslamprou.gr/articles/images/thoughts-on-domain-experts.png">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Georgios Lamprou">
-<link rel="canonical" href="https://labs.georgioslamprou.gr/articles/">
+<meta property="og:image:height" content="941">
+<meta property="og:image:width" content="1672">
+<meta name="twitter:title" content="Thoughts on domain experts">
+<meta name="twitter:description" content="Articles and reflections on data science, AI and technology.">
+<meta name="twitter:image" content="https://labs.georgioslamprou.gr/articles/images/thoughts-on-domain-experts.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image-height" content="941">
+<meta name="twitter:image-width" content="1672">
+<link rel="canonical" href="https://labs.georgioslamprou.gr/articles/thoughts-on-domain-experts.html">
 </head>
 
-<body class="nav-fixed landing-page quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -318,7 +268,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../articles/index.html" aria-current="page"> 
+    <a class="nav-link" href="../articles/index.html"> 
 <span class="menu-text">Articles</span></a>
   </li>  
   <li class="nav-item">
@@ -337,55 +287,97 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#software-starts-with-a-problem" id="toc-software-starts-with-a-problem" class="nav-link active" data-scroll-target="#software-starts-with-a-problem">Software starts with a problem</a></li>
+  <li><a href="#domain-experts-and-decisions" id="toc-domain-experts-and-decisions" class="nav-link" data-scroll-target="#domain-experts-and-decisions">Domain experts and decisions</a></li>
+  <li><a href="#domain-expertise-is-a-shared-responsibility" id="toc-domain-expertise-is-a-shared-responsibility" class="nav-link" data-scroll-target="#domain-expertise-is-a-shared-responsibility">Domain expertise is a shared responsibility</a></li>
+  <li><a href="#are-data-science-products-different" id="toc-are-data-science-products-different" class="nav-link" data-scroll-target="#are-data-science-products-different">Are data science products different?</a></li>
+  <li><a href="#cant-ai-be-the-ultimate-multi-domain-expert" id="toc-cant-ai-be-the-ultimate-multi-domain-expert" class="nav-link" data-scroll-target="#cant-ai-be-the-ultimate-multi-domain-expert">Can’t AI be the ultimate multi-domain expert?</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 class="title display-7">Articles</h1></header>
+<main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header">
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Thoughts on domain experts</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Opinion</div>
+    <div class="quarto-category">Product Thinking</div>
+    <div class="quarto-category">Data Science</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Georgios Lamprou </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 30, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
 
 
 </header>
 
 
+<p><img src="images/thoughts-on-domain-experts.png" class="img-fluid"></p>
+<section id="software-starts-with-a-problem" class="level2">
+<h2 class="anchored" data-anchor-id="software-starts-with-a-problem">Software starts with a problem</h2>
+<p>A software product is primarily an attempt to solve a problem. The problem may exist within an internal business operation or it can be an unsolved need of the people as a whole. Of course, solving one problem can create others and social media is such an example. This is, however, a topic for another article.</p>
+<p>The question is then “What is a problem?” One possible answer is that almost anything can be considered a problem because every operation can be improved indefinitely within the limits of the laws of nature. This is not extremely helpful, though, because we can’t solve all problems at once. Then, we can somehow organize problems hierarchically and then attempt to solve them in a way that improves several related sub-problems simultaneously, even if it does not solve them entirely. Assuming this is a good way to approach the situation, then the next question is “Who determines the hierarchy of problems?”</p>
+</section>
+<section id="domain-experts-and-decisions" class="level2">
+<h2 class="anchored" data-anchor-id="domain-experts-and-decisions">Domain experts and decisions</h2>
+<p>The answer must involve a combination of executives, managers and technical leaders. Among them, domain experts should play a primary role. But who are they? In a law firm, the domain experts are the lawyers, or depending on their specialization, there can be subdomain experts (labour law experts for instance). But how about domain experts in larger businesses? Usually things become blurrier there, because the domain itself may lack a clear definition. It usually involves a combination of processes, constraints, user behaviours and expectations. In that environment, someone may be designated a domain expert because of a relevant educational background, experience in a similar position or industry or simply management experience. This designation may be neutral or it can be bad.</p>
+<p>It can be neutral when the domain experts have an open mind and are willing to discuss alternative priorities and alternative approaches to solve problems relevant to these priorities, accepting, essentially, that they may not know everything about the domain, especially around its boundaries. Usually, in a larger business there are many moving parts and it’s not uncommon for each operations manager to consider their own problems as the most important ones. Thinking that your own problems are the most important is not by itself bad, it’s just human. It can become bad when this thinking forms the basis of a business decision to proceed with one project or another or change a system in certain ways.</p>
+<p>Politics exist in all organizations, it’s just inevitable. The question is to what degree they exist. The most successful organizations are those that adopt a holistic approach to evaluating problems and priorities and are not driven primarily by the disproportionate influence of a particular team or manager.</p>
+</section>
+<section id="domain-expertise-is-a-shared-responsibility" class="level2">
+<h2 class="anchored" data-anchor-id="domain-expertise-is-a-shared-responsibility">Domain expertise is a shared responsibility</h2>
+<p>Nevertheless, even incomplete domain expertise is preferable to having no domain expertise at all. You can’t expect to build any software product without any information about why this product is needed, who the target users are, what business constraints exist, why the previous product or process is no longer satisfactory, how competitors approach a similar problem and many other questions. Partial information is better than no information at all or relying on your own research, which at best will be incomplete.</p>
+<p>Having domain experts is as important as building the product itself. What’s the point of being an exceptional software developer but building the wrong product? Lacking domain experts is extremely expensive for a company in the long term. At the same time, developers must be willing to learn things about their industry and business and demand participation in meetings, which will facilitate this learning. It goes the other way around too. Ops managers need to know the basics of how software products work. I’ve sometimes heard from ops people the phrase “Do your magic, George”. There is no magic here and this perception shouldn’t exist, and it will stop existing if people have some basic understanding of software systems.</p>
+</section>
+<section id="are-data-science-products-different" class="level2">
+<h2 class="anchored" data-anchor-id="are-data-science-products-different">Are data science products different?</h2>
+<p>The answer is no. The difference is that data science involves analysing and using data. Yes, you can use statistical methods to derive some conclusions, but what if the data are misleading? What if you haven’t understood the context? What if you don’t know how the product will be used?</p>
+<p>In a way, domain experts might be even more important regarding data science products, since these products may automate operational decisions. Optimizing for the wrong objective can have potentially catastrophic consequences. For more than a decade, I have seen job postings requiring data scientists to have domain knowledge or, at least, a willingness to learn about the domain. I suppose this requirement was based on the understanding of how critical it can be to have a sound system producing the wrong output.</p>
+</section>
+<section id="cant-ai-be-the-ultimate-multi-domain-expert" class="level2">
+<h2 class="anchored" data-anchor-id="cant-ai-be-the-ultimate-multi-domain-expert">Can’t AI be the ultimate multi-domain expert?</h2>
+<p>Perhaps it can eventually be, but we’re not there yet. AI systems continue to make mistakes. This is partly why domain-specialized RAG-based applications exist, but even they have limitations. Sometimes there is no universally best way to approach a problem. It may depend on the industry, country, city, context and business-specific considerations. There may be a lack of reliable material online to help those systems provide accurate information. It’s not uncommon for businesses not to document everything regarding the domain.</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>I tried here to express my thoughts on the issue, not only because of the lessons and frustrations in my career so far, but also because I understand how important domain expertise is while working on a more personal project. Domain expertise is the foundation of a successful software product and, now that everything is about building things fast, we tend to forget that products that last are products with a solid foundation.</p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="T3BpbmlvbiUyQ1Byb2R1Y3QlMjBUaGlua2luZyUyQ0RhdGElMjBTY2llbmNl" data-listing-date-sort="1785358800000" data-listing-file-modified-sort="1785420159899" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="955">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../articles/thoughts-on-domain-experts.html" class="no-external">Thoughts on domain experts</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('T3Bpbmlvbg=='); return false;">Opinion</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UHJvZHVjdCUyMFRoaW5raW5n'); return false;">Product Thinking</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFNjaWVuY2U='); return false;">Data Science</div>
-
-</div>
-<div class="delink listing-description"><a href="../articles/thoughts-on-domain-experts.html" class="no-external">
-A software product is primarily an attempt to solve a problem. The problem may exist within an internal business operation or it can be an unsolved need of the people as a…
-</a></div>
-</div>
-<div class="metadata">
-<a href="../articles/thoughts-on-domain-experts.html" class="no-external">
-<div class="listing-date">
-July 30, 2026
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
