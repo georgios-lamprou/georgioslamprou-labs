@@ -13,7 +13,7 @@ listing:
     - "!_template.qmd"
   sort: "date desc"
   type: default
-  fields: [date, title, description, categories]
+  fields: [image, image-alt, date, title, description, categories]
   feed:
     type: full
     title: "Articles by Georgios Lamprou"
