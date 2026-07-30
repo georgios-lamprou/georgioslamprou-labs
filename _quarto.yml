@@ -9,7 +9,7 @@ project:
     - "!projects/**"
 
 website:
-  description: "This is my personal website intended for writing technical articles and beyond."
+  description: "Articles and reflections on data science, AI and technology."
   site-url: "https://labs.georgioslamprou.gr"
   draft-mode: gone
   search: false
