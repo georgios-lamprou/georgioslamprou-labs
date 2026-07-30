@@ -6,11 +6,16 @@ categories:
   - Opinion
   - Product Thinking
   - Data Science
+image: "images/thoughts-on-domain-experts.png"
+twitter-card:
+  card-style: summary_large_image
 
 draft: false
 execute:
   freeze: auto
 ---
+
+![](images/thoughts-on-domain-experts.png)
 
 ## Software starts with a problem
 
