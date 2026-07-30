@@ -1,0 +1,14 @@
+---
+title: "Draft article"
+description: "Private scaffold for the first technical article."
+author: "Georgios Lamprou"
+date: "2026-07-18"
+categories:
+  - applied-machine-learning
+draft: true
+execute:
+  freeze: auto
+---
+
+This private draft exists to validate the article publishing structure. Replace it with a substantive article before changing `draft` to `false`.
+

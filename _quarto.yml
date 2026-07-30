@@ -1,0 +1,71 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "*.qmd"
+    - "about/*.qmd"
+    - "articles/*.qmd"
+    - "cv/*.qmd"
+    - "!projects/**"
+
+website:
+  description: "This is my personal website intended for writing technical articles and beyond."
+  site-url: "https://labs.georgioslamprou.gr"
+  draft-mode: gone
+  search: false
+  navbar:
+    title: "Georgios Lamprou"
+    pinned: true
+    collapse-below: md
+    left:
+      - text: "Articles"
+        href: articles/index.qmd
+      - text: "About"
+        href: about/index.qmd
+    tools:
+      - icon: github
+        href: "https://github.com/georgios-lamprou"
+        aria-label: "Georgios Lamprou on GitHub"
+      - icon: linkedin
+        href: "https://www.linkedin.com/in/georgioslamprou/"
+        aria-label: "Georgios Lamprou on LinkedIn"
+      - icon: envelope
+        href: "mailto:contact@georgioslamprou.gr"
+        aria-label: "Email Georgios Lamprou"
+  page-footer:
+    border: false
+    left: "© 2026 Georgios Lamprou"
+  open-graph:
+    locale: en_US
+    site-name: "Georgios Lamprou"
+
+format:
+  html:
+    canonical-url: true
+    respect-user-color-scheme: true
+    theme:
+      light:
+        - cosmo
+        - theme-light.scss
+        - styles.scss
+      dark:
+        - darkly
+        - theme-dark.scss
+        - styles.scss
+    toc: true
+    toc-title: "On this page"
+    smooth-scroll: true
+    anchor-sections: true
+    code-copy: true
+    code-overflow: wrap
+    link-external-newwindow: true
+    include-in-header:
+      text: |
+        <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f4eddf">
+        <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#241c18">
+
+execute:
+  freeze: auto
+
+lang: en
+date-format: "MMMM D, YYYY"

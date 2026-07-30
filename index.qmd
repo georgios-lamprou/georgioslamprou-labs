@@ -1,0 +1,17 @@
+---
+title: "Georgios Lamprou"
+description: "Senior Data Scientist working at the intersection of applied machine learning, reliable data products, and technical leadership."
+pagetitle: "Georgios Lamprou - Senior Data Scientist"
+title-block-style: none
+body-classes: landing-page
+toc: false
+page-layout: full
+---
+
+::: {.home-quote}
+<h1 class="visually-hidden">Georgios Lamprou — Senior Data Scientist</h1>
+
+> All models are wrong, but some are useful.
+>
+> <cite>George E. P. Box</cite>
+:::

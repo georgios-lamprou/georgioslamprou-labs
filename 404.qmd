@@ -1,0 +1,20 @@
+---
+title: "Page not found"
+pagetitle: "Page not found - Georgios Lamprou"
+title-block-style: none
+body-classes: landing-page
+output-file: 404.html
+toc: false
+page-layout: full
+search: false
+---
+
+::: {.page-intro}
+<p class="eyebrow">404</p>
+
+# This page does not exist.
+
+<p class="lede">The address may have changed, or the page may not have been published.</p>
+
+[Return home](index.qmd){.site-button}
+:::

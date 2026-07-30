@@ -1,0 +1,13 @@
+/.quarto/
+/_site/
+/.jupyter_cache/
+/.venv/
+/.DS_Store
+
+# Quarto freeze outputs are intentionally versioned.
+!/_freeze/
+
+
+**/*.quarto_ipynb
+
+*.deb

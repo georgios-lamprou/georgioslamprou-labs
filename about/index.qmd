@@ -1,0 +1,26 @@
+---
+title: "About"
+description: "About Georgios Lamprou and his approach to data science practice."
+pagetitle: "About - Georgios Lamprou"
+title-block-style: none
+body-classes: landing-page
+toc: false
+page-layout: full
+---
+
+::: {.page-intro}
+<p class="eyebrow">About</p>
+
+This site is for writing articles about topics I find interesting in the broader data science and AI fields. I am not planning to write about things that have already been exhausted and, if I accidentally do, I apologise in advance. We certainly do not need another website discussing concepts in isolation from their particular implementation.
+
+Sometimes, I may also touch on areas of philosophy that are important to me, particularly the philosophy of mind and topics related to consciousness.
+
+I will try to keep my writing as authentic as possible and use AI only to assist me with repetitive and boring tasks, such as checking spelling, creating structure, styling the website, double-checking conclusions and refining the writing. I do not want to use it to generate content or ideas from scratch. That is because I want the site to be mine and neither "the best" version of my thoughts nor the average result of tokens sequentially selected from a probability distribution that I may not even like.
+
+That is not to say that I am against AI. As a technologist, I would be stupid to be. I simply want AI to remain a tool rather than become the author.
+
+One thing I cannot guarantee is the publishing frequency. As I said, I want to write about things that spark my interest, rather than write merely for the sake of writing. Finding interesting things to write about may be rare or unevenly distributed over time. Nevertheless, I will do my best to compensate for the lack of frequency with quality.
+
+Feel free to reach out if you have any questions or would like to discuss a topic.
+
+:::
